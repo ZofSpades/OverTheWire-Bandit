@@ -1,0 +1,13 @@
+cmdit: ssh -p 2220 bandit11@bandit.labs.overthewire.org
+password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+cmdit: ls
+cmdit: cat data.txt
+We can see a ROT13 encoding which is bascially shifting the particular letter by it's next 13th letter.
+If we decode this, we will get password for next bandit
+
+cmdit: cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+Here "tr" basically means translate, so we are saying that 'A' is 'N' (the 13th letter after A is N) and so on for both upper and lower case.
+So, this cmd decodes and gives password for bandit12
+
+password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4

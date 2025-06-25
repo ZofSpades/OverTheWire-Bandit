@@ -1,0 +1,12 @@
+cmdit: ssh -p 2220 bandit10@bandit.labs.overthewire.org
+password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+cmdit: ls
+cmdit: cat data.txt
+We can see a line which is BASE64 encoded.
+We have to decode this to get the password for next bandit.
+
+cmdit: cat data.txt | base64 -d
+This decodes and gives the password for bandit11.
+
+password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
