@@ -23,7 +23,7 @@ The repository is organized into clearly separated sections:
 ### 🔹 File Naming Convention
 - `_bandit_0.txt` — optional setup/login instructions.
 - `bandit_X_Y.txt` — contains the commands used to solve level X and obtain the password for level Y.
-- `__bandit_all_passwords.txt` — contains the final passwords collected from each level for quick reference.
+- `bandit_all_passwords.txt` — contains the final passwords collected from each level for quick reference.
 
 ## 📄 File Style & Contents
 
