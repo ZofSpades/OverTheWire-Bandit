@@ -4,16 +4,20 @@ This repository contains concise, step-by-step solutions for each level of the [
 
 ## 📁 Repository Structure
 
-The files are named according to the level transitions:
+The repository is organized into clearly separated sections:
 
 ```
 📁 OverTheWire-Bandit/
-├── __bandit_all_passwords.txt   # Cumulative passwords for all levels
-├── _bandit_0.txt                # Starting info or login instructions
-├── bandit_0_1.txt               # Steps to go from Level 0 to 1
-├── bandit_1_2.txt               # Steps to go from Level 1 to 2
-├── bandit_2_3.txt
-├── ...
+├── All Passwords/
+│   └── bandit_all_passwords.txt     # Cumulative passwords for all levels
+├── Levels/
+│   ├── _bandit_0.txt                # Starting info or login instructions
+│   ├── bandit_0_1.txt               # Steps to go from Level 0 to 1
+│   ├── bandit_1_2.txt               # Steps to go from Level 1 to 2
+│   ├── bandit_2_3.txt
+│   └── ...
+├── LICENSE                         # MIT License
+└── README.md                       
 ```
 
 ### 🔹 File Naming Convention
