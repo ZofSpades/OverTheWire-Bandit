@@ -1,0 +1,10 @@
+cmdit: ssh -p 2220 bandit8@bandit.labs.overthewire.org
+password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+cmdit: ls
+cmdit: cat data.txt
+cmdit: sort data.txt | uniq -u
+Here "sort" cmd, sorts the lines where duplicates come together, and "uniq -u" cmd, only prints unique lines
+This gives to password for bandit9.
+
+password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM

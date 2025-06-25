@@ -1,0 +1,12 @@
+cmdit: ssh -p 2220 bandit1@bandit.labs.overthewire.org
+password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+cmdit: ls
+You will find a file with name "-"
+This cant be printed with just "cat -"
+This is because in terminal "-" signifies the cmd parameters? or something like that, so we need to write the complete path
+
+cmdit: cat ./-
+This is will give you password for bandit2.
+
+password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx

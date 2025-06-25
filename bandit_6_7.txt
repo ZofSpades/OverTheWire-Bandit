@@ -1,0 +1,28 @@
+cmdit: ssh -p 2220 bandit6@bandit.labs.overthewire.org
+password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+cmdit: ls -al
+There is nothing here to take note of.
+
+cmdit: cd ..
+This moves to previous directory.
+Here we can see many directories to be present.
+
+Since we know the user and group owner along with the file size, we can directly find for it.
+cmdit: find . / -user bandit7 -group bandit6 -size 33c
+We got many files with denied access and the path to the file where the password for next level of bandit is.
+We could just scroll looking for it or better tweak the cmd to do the same.
+
+cmdit:  find . / -user bandit7 -group bandit6 -size 33c 2> /dev/null
+So in this cmd, we added somethinng extra, i.e., 2> /dev/null
+    2> -> the number 2 basically signifies std. error or error meassages (0 for input and 1 for std. output).
+          and '>' redirects to the specified location
+    /dev/null -> this discards anythinng written to it, basically like a black-hole
+                 Reference: https://linuxhint.com/what_is_dev_null/?source=post_page-----9a57d2403839---------------------------------------
+
+The above cmd gives to path to the file where password could be stored.
+
+cmdit:  cat /var/lib/dpkg/info/bandit7.password
+This gives you password for bandit7
+
+password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj

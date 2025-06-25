@@ -1,0 +1,10 @@
+ssh basically connects you to online servers
+
+cmd: ssh -p xxxx <user>@<host>
+Here -p says port number(xxxx), user is the username and host is the server link
+
+cmd in terminal(cmdit): ssh -p 2220 bandit0@bandit.labs.overthewire.org
+password: bandit0
+
+cmdit: logout
+Once done finding password, just write the above cmd to logout

@@ -1,0 +1,18 @@
+cmdit: ssh -p 2220 bandit4@bandit.labs.overthewire.org
+password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+cmdit: ls
+cmdit: cd inhere
+cmdit: ls
+cmdit: find . -exec file -i {} + | grep 'text/plain'
+This cmd, we can break into parts:
+    find . -> this recuresively searches from the current directory
+    -exec -> executes cmd after going to files and folders
+    file -i {} + -> this dertermines the file type
+    grep 'text/plain' -> this filters annd display only text/plain type of files
+When this cmd is executed we get ./-file07
+
+cmdit: cat ./-file07
+This is will give you password for bandit5
+
+password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw

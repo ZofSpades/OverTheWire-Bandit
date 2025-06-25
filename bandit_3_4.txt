@@ -1,0 +1,21 @@
+cmdit: ssh -p 2220 bandit3@bandit.labs.overthewire.org
+password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+cmdit: ls
+You will find inhere directory
+
+cmdit: cd inhere
+This will change the working directory to inhere
+
+cmdit: ls -a
+This is show you hidden files and folders present in the directory
+
+cmdit: ls -al
+This too does the same as above and along with that "l" after "-a", lists all the files and folders with their permissions and owners
+
+With either after writing the above cmds, you will find a file called "...Hiding-From-You"
+
+cmdit: cat ...Hiding-From-You
+This will give you password for bandit4
+
+password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ

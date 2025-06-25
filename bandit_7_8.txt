@@ -1,0 +1,12 @@
+cmdit: ssh -p 2220 bandit7@bandit.labs.overthewire.org
+password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+cmdit: ls
+cmdit: cat data.txt
+This prints complete long file, and we have to search manually for the word millionth
+
+Instead, we shall use grep cmd
+cmdit: cat data.txt | grep "millionth"
+This gives you password for bandit8
+
+password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc

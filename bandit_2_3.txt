@@ -1,0 +1,13 @@
+cmdit: ssh -p 2220 bandit2@bandit.labs.overthewire.org
+password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+cmdit: ls
+You will find "spaces in this filename" file
+
+cmdit: cat spaces\ in\ this\ filename
+This will give you password for bandit3.
+
+Tip: just write "cat spaces" and click tab, this will complete the cmd which you are supposed to write.
+You can use this for any filename.
+
+password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx

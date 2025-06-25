@@ -1,0 +1,15 @@
+cmdit: ssh -p 2220 bandit5@bandit.labs.overthewire.org
+password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+cmdit: ls
+cmdit: cd inhere
+cmdit: ls
+cmdit: find . -size 1033c
+This cmd will recursively search from the current diretory for the file with size 1033 bytes.
+Here 'c' means bytes
+Reference: https://linuxconfig.org/how-to-use-find-command-to-search-for-files-based-on-file-size
+
+cmdit: cat ./maybehere07/.file2 
+This will give you password for bandit6 without changing current directory to maybehere07 and then printing the ".file2" file.
+
+password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG

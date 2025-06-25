@@ -1,0 +1,10 @@
+Continue the below steps from bandit0.
+
+cmdit: ls
+You will find a file called readme
+This file contains your password for bandit1
+
+cmdit: cat readme
+The cmd cat basically prints the content of the file in terminal
+
+password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
