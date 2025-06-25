@@ -42,9 +42,11 @@ Tip: You can add multi-line comments or guidance.
 
 ### 🧠 Tips
 - Commands start with `cmdit:` for clarity.
+- `cmdit:` stands for a command to be typed in the terminal.
 - Explanations follow the relevant command.
 - Use `Tip:` lines to offer helpful hints.
 - Passwords are shown at the **end** of each file with `password:`.
+- Relevant external references or tools are mentioned when necessary to help understand or solve a level.
 
 ## 🛑 Disclaimer
 
