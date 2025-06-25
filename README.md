@@ -52,7 +52,7 @@ These solutions are for educational purposes only and are personally written by 
 
 ## 📣 Found a Mistake?
 
-If you notice any errors or have suggestions to improve the solutions, feel free to [open an issue](https://github.com/your-username/OverTheWire-Bandit/issues). Contributions and corrections are welcome!
+If you notice any errors or have suggestions to improve the solutions, feel free to [open an issue](https://github.com/zofspades/OverTheWire-Bandit/issues). Contributions and corrections are welcome!
 
 
 
