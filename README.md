@@ -48,6 +48,8 @@ Tip: You can add multi-line comments or guidance.
 
 ## 🛑 Disclaimer
 
+This repository was originally created for my personal reference while solving the Bandit wargame. I decided to upload it in case it helps others facing similar challenges.
+
 These solutions are for educational purposes only and are personally written by me based on my own solving of the levels. Try solving the levels yourself first — use this repo as a reference or last resort.
 
 ## 📣 Found a Mistake?
