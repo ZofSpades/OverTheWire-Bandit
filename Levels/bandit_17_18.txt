@@ -1,0 +1,11 @@
+Here, I could have continued from previous challenge, but meh who cares!
+
+cmdit: ssh -p 2220 bandit17@bandit.labs.overthewire.org
+password: EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
+
+cmdit: ls -al
+cmdit: diff passwords.new passwords.old
+This cmd prints which unique line is changed to what(since the rest remains the same).
+Since I mentioned .new first and then .old, the first text which is printed on the terminal belongs to .new file and is the password for bandit18
+
+password: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO

@@ -1,0 +1,12 @@
+Continue from Bandit 14 to 15
+
+Tip: Basic knowledge on SSL and TLS is required to understand what actually is going on.
+
+cmdit: openssl S-client -connect localhost:30001
+After writing this cmd, it expects to enter some kind of input, enter the password of previous bandit and hit enter.
+This gives you password for Bandit16.
+
+Here openssl is the tool which handles ssl/tls encryption.
+'s_client'connects securely to the server, i.e., localhost machine to the port 30001
+
+password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx

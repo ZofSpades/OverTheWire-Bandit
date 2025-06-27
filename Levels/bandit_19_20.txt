@@ -1,0 +1,16 @@
+cmdit:  ssh -p 2220 bandit19@bandit.labs.overthewire.org
+password: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+
+cmdit: ls -al
+Here we can see a file called 'bandit20-do' with 's' in file permissions.
+This says that it is a setuid file.
+Basically, a setuid file is a type of file which runs its cmd as another user temporarily.
+
+cmdit: ./bandit20-do
+cmdit: ./bandit20-do id
+Here we can see that euid belongs to bandit20
+
+cmdit: ./bandit20-do cat /etc/bandit_pass/bandit20
+This gives you password for bandit20
+
+password: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO

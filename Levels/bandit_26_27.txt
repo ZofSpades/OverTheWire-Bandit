@@ -1,0 +1,11 @@
+Continue from Bandit 25 to 26
+Or try to login with bandit26 as user as you do for other challenges but with small terminal, to open vim editor like last challenge
+
+After set shell and stuff, continue as follow
+
+cmdit: ls
+cmdit: ./bandit27-do
+cmdit: ./bandit27-do cat /etc/bandit_pass/bandit27
+This gives you password for next bandit
+
+password: upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB

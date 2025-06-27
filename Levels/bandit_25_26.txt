@@ -1,0 +1,37 @@
+cmdit: ssh -p 2220 bandit25@bandit.labs.overthewire.org
+password: iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+
+cmdit: ls
+cmdit: cat bandit26.sshkey
+cmdit: ssh -i bandit26.sshkey -p 2220 bandit26@localhost
+It shows that we got connected, but got logged out as soon as we logged in.
+
+I came to know that, since all these machines or users are interconnected, we can see the shell each user are using.
+
+cmdit: cat /etc/passwd
+This shows each user's shell.
+Here we can be that in bandit26, instead of /bin/bash, there is /usr/bin/showtext
+
+cmdit: cat /usr/bin/showtext
+Here we can see that a .txt file is being executed which may or maynot print the content while logging to bandit26.
+But we also see 'more' word here.
+The speciality of 'more' is that when text or file content is show on terminal, if the content is more or big that terminal, it goes to interactive mode.
+You can try to use 'man' for nay cmd and check that, if teh terminal is small, we have to scroll manually to look further.
+This is what we gonna try now.
+
+Resize your terminal, smaller than the login content 
+
+cmdit: ssh -i bandit26.sshkey -p 2220 bandit26@localhost
+
+Now we that it has entered interactive mode, and we are able to scroll, but dont actually scroll, because you will be logged out again.
+
+Now hold the letter v to access vim editor(I need to learn more on vim, since I just use nano. So I wouldn't be explain complex stuff like how actually it is working for now)
+
+cmdit: :set shell=/bin/bash
+cmdit: :shell
+Now we can see than bandit26 is the user right now.
+
+cmdit: cat /etc/bandit_pass/bandit26
+This gives you password for next bandit.
+
+password: s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ

@@ -1,0 +1,16 @@
+cmdit:  ssh -p 2220 bandit21@bandit.labs.overthewire.org
+password: EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+
+cmdit: cd /etc/cron.d
+cmdit: ls
+cmdit: cat cronjob_bandit22
+Since we need password only for Bandit22, we just see the content of just this file.
+We see that there is a cron job which executes a shell script
+
+cmdit: cat /usr/bin/cronjob_bandit22.sh
+We see that there is some file in 'tmp' which is getting saved or copied to bandit22
+
+cmdit: cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+This gives you password for next bandit.
+
+password: tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q

@@ -1,0 +1,35 @@
+Continue from Bandit 15 to 16
+
+cmdit: nmap -p 31000-32000 --script sll-cert localhost
+This scans all your ports on locahost machine for open ports along with ssl certificate.
+This reduces time to check each port for ssl certificate too.
+We get 2 such ports.
+
+cmdit:  openssl s_client -connect localhost:31518 --quiet
+Here '--quiet' is used to remove unneccessary data which is not needed for us, hence clean terminal.
+After hitting enter, paste the previous bandit password, and hit enter.
+We get the same text what we entered, so this is not the right port.
+
+cmdit:  openssl s_client -connect localhost:31790 --quiet
+Do the same as before, now we get a  private RSA key as the output.
+Copy this
+
+cmdit: mkdir /tmp/spam
+We need to store this private RSA key in a file to connect to bandit17, so we are making a new directory
+
+cmdit: cd /tmp/spam
+cmdit: nano sec_key
+'nano' is a text editor where you can edit texts in terminal itself.
+Paste the key you copied before here and save it.
+
+cmdit: chmod 400 sec_key
+We are changing the file permission to read-only, so that there wouldn't be any tampering with it and ssh only uses these types of files.
+
+cmdit:  ssh -i sec_key -p 2220 bandit17@localhost
+We are now logged in to bandit17 system.
+
+cmdit: cat /etc/bandit_pass/bandit17
+This gives us the password for Bandit17
+This step is actually not required since we have been using different machine inside the different machine inside the diff- (ok, i'll stop :))
+
+password: EReVavePLFHtFlFsjn3hyzMlvSuSAcRD

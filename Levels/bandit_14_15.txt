@@ -1,0 +1,14 @@
+Continue this challenge from Bandit level 13 to 14
+
+cmdit: cat /etc/bandit_pass/bandit14
+Copy the password of previous challenge
+
+cmdit: nc localhost 30000
+After writing this and clicking enter, it waits for you to give some input.
+And the input you have to enter is the copied password of the previous challenge.
+When you enter the correct password, and hit enter, it prints the password for next Bandit.
+
+Here what "nc" does is, it makes TCP connection between your working terminal and the localhost (since we mentioned it in cmdit) on port 30000.
+We can even use 'nc' cmd to connect to other machines using the same way (nc <machine> <port>)
+
+password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo

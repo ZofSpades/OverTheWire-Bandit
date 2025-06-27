@@ -1,0 +1,20 @@
+cmdit: ssh -p 2220 bandit13@bandit.labs.overthewire.org
+password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+
+Tip: Read the reference below before starting this challenge
+Reference: https://help.ubuntu.com/community/SSH/OpenSSH/Keys
+
+cmdit: ls
+cmdit: cat sshkey.private
+You will see that a private RSA key is stored in it.
+Now we need to connect to bandit14 to get the password for next bandit.
+
+cmdit:  ssh -i sshkey.private -p 2220 bandit14@localhost
+Here we are connecting to another remote machine using ssh.
+"ssh.private" file is private RSA key needed to authenticate for connection.
+And if we don't use the port number 2220, 22 will be used as default, again to which we wouldn't be able to connect.
+
+cmdit: cat /etc/bandit_pass/bandit14
+This prints the password needed for bandit14
+
+password: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS

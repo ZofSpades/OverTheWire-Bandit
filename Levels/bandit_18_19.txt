@@ -1,0 +1,24 @@
+cmdit: ssh -p 2220 bandit18@bandit.labs.overthewire.org
+password: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+
+Byebye!
+
+Here we are getting logout beacuse, .bashrc in it, has been changed to do this so.
+
+cmdit: ssh -p 2220 bandit18@bandit.labs.overthewire.org cat .bashrc
+password: <you enter>
+Here we see that, at the end of the .bashrc file, there is a line called "exit 0".
+This line is causing the bash terminal to exit each time we try to login.
+To solve this, we need to try to access different type of terminal after login instead of bash, to bypass .bashrc
+
+cmdit: ssh -p 2220 bandit18@bandit.labs.overthewire.org -t /bin/sh
+password: <you enter>
+This time we have successfully bypassed .bashrc and we logged in.
+This is because we used pseudo terminal 'sh', i.e., the primitive version of bash.
+So, .bashrc is not being called at all, and we are directly accessing 'sh' terminal.
+
+cmdit: ls
+cmdit: cat readme
+This gives you password for bandit19
+
+password: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8

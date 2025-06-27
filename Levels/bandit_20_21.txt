@@ -1,0 +1,18 @@
+cmdit:  ssh -p 2220 bandit20@bandit.labs.overthewire.org
+password: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+cmdit: ls -al
+cmdit: ./suconnect
+It is asking us to enter a port number.
+
+In the challenge, they asked us to create our own network process and check.
+cmdit: excho "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -lp 12345 &
+Here, we are opening a port to listen all incoming messages, '&' is used to keep the process in background.
+
+cmdit: jobs
+This cmd is used to check if the process is running or not.
+
+cmdit: ./suconnect 12345
+We get the password for next Bandit.
+
+password: EeoULMCra2q0dSkYj561DX7s1CpBuOBt

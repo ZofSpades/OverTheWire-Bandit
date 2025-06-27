@@ -1,0 +1,17 @@
+cmdit:  ssh -p 2220 bandit22@bandit.labs.overthewire.org
+password: tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+
+cmdit: cd /etc/cron.d
+cmdit: cat cronjob_bandit23
+cmdit: cat /usr/bin/cronjob_bandit23.sh
+Here, in the script, 'myname' is actually bandit23.
+To get 'mytarget', we need to execute the line said in the script
+
+cmdit: echo "I am user bandit23" | md5sum | cut -d ' ' -f 1
+We get a line, this is mytarget
+
+Since the next line says that /tmp/$mytarget is getting saved or copied to bandit23 in 'etc' directory, this is the password
+cmdit: cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+When you execute this, we get the password for next bandit.
+
+password: 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
