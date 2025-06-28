@@ -1,0 +1,26 @@
+cmdit: ssh -p 2220 bandit28@bandit.labs.overthewire.org
+password: Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
+
+cmdit: mkdir /tmp/spam1
+cmdit: cd /tmp/spam1
+cmdit: git clone "ssh://bandit28-git@localhost:2220/home/bandit28-git/repo"
+cmdit: ls -a
+cmdit: cd repo
+cmdit: ls -a
+cmdit: cat README.md
+Here we can see that the password is being censored in the README.md.
+So, let's check if there was any previous commit
+
+cmdit: git log
+Here we can see 2 commits prior to teh final one which we just read.
+Let's check each one from bottom.
+
+cmdit: git checkout a5fdc97aae2c6f0e6c1e722877a100f24bcaaa46
+cmdit: cat README.md
+Here the password is to be decided.
+
+cmdit: git checkout fb0df1358b1ff146f581651a84bae622353a71c0
+cmdit: cat README.md
+This gives us password for next bandit
+
+password: 4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7

@@ -1,0 +1,23 @@
+cmdit: ssh -p 2220 bandit29@bandit.labs.overthewire.org
+password: 4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
+
+cmdit: mkdir /tmp/spam2
+cmdit: cd /tmp/spam2
+cmdit: git clone "ssh://bandit29-git@localhost:2220/home/bandit29-git/repo"
+cmdit: ls -a
+cmdit: cd repo
+cmdit: ls -a
+cmdit: cat README.md
+Here we see, '<no passwords in production!>'
+This hints us that password might be in any other branch.
+
+cmdit: git branch -a
+Here we see that there are 3 branches apart from HEAD/master
+Lets check each one until we get the password
+
+cmdit: git checkout remotes/origin/dev
+cmdit:ls -a
+cmdit: cat README.md
+This gives us password for next bandit
+
+password: qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL

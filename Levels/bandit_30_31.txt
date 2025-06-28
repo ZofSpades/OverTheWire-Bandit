@@ -1,0 +1,21 @@
+cmdit: ssh -p 2220 bandit30@bandit.labs.overthewire.org
+password: qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
+
+cmdit: mkdir /tmp/spam3
+cmdit: cd /tmp/spam3
+cmdit: git clone "ssh://bandit30-git@localhost:2220/home/bandit30-git/repo"
+cmdit: ls -a
+cmdit: cd repo
+cmdit: ls -a
+cmdit: cat README.md
+Nothing useful in this file.
+Next checked logs and branches, nothing there too.
+In git, there is something called tags, which are used to mark stuff, lets check this
+
+cmdit: git tag
+Here we see that there some tag called secret
+
+cmdit: git show secret
+This gives us password for next bandit
+
+password: fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy

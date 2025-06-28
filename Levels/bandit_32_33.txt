@@ -1,0 +1,22 @@
+cmdit: ssh -p 2220 bandit32@bandit.labs.overthewire.org
+password: 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
+
+cmdit: ls
+cmdit: man
+These are getting converted to upper case
+We need to find some other way
+
+cmdit: $0
+There is bit more explanation to this, so just google about it.
+In short, we are opening current working shell inside teh current working shell (goods crazy right?!)
+
+cmdit: ls -al
+Here we can see that there is a file with bandit33 as owner
+
+cmdit: cat uppershell
+This is gibberish
+
+cmdit: cat /etc/bandit_pass/bandit33
+I just tried this to see whats gonna happen and got password for next bandit (:skull) !!!
+
+password: tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0

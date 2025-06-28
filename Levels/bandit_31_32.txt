@@ -1,0 +1,30 @@
+cmdit: ssh -p 2220 bandit31@bandit.labs.overthewire.org
+password: fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+
+cmdit: mkdir /tmp/spam4
+cmdit: cd /tmp/spam4
+cmdit: git clone "ssh://bandit31-git@localhost:2220/home/bandit31-git/repo"
+cmdit: ls -a
+cmdit: cd repo
+cmdit: ls -a
+cmdit: cat README.md
+Here we are asked to push a file to remote repo
+
+cmdit: cat .gitignore
+Here we see that there is '*.txt' file.
+This file doesn't let any file with '.txt' to be considered as part of repo, so we need to remove this file
+
+cmdit: rm .gitignore
+
+Now, lets make the file
+
+cmdit: echo "May I come in?" > key.txt
+
+Now lets add this file, and make a commit before pushing the file
+
+cmdit: git add .
+cmdit: git commit -m "added key.txt"
+cmdit: git push origin master
+This gives us password for next bandit
+
+password: 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K

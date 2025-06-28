@@ -1,0 +1,9 @@
+cmdit: ssh -p 2220 bandit33@bandit.labs.overthewire.org
+password: tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
+
+cmdit: ls -a
+cmdit: cat README.txt
+Thank you to the guys who made this "BANDITS"!!
+Got to learn a lot!
+
+password: keep hacking! (this ain't real, I just wrote.....hehehe)
